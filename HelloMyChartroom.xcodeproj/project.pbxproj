@@ -7,14 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B91CD7E46A9153A4AB38677 /* Pods_HelloMyChartroom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 827014B8FD6C641356416F6B /* Pods_HelloMyChartroom.framework */; };
+		EA0DAD0F21201EC600218A0C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = EA0DAD0E21201EC600218A0C /* .gitignore */; };
+		EA68CAAE20E47D38004610FF /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA68CAAD20E47D38004610FF /* Define.swift */; };
+		EA68CAB020E494C0004610FF /* ChatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA68CAAF20E494C0004610FF /* ChatItem.swift */; };
+		EA68CAB320E4BDCE004610FF /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA68CAB220E4BDCE004610FF /* ChatView.swift */; };
+		EA68CADC20E5CF64004610FF /* fromMe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA68CAD820E5CF64004610FF /* fromMe@2x.png */; };
+		EA68CADD20E5CF64004610FF /* fromOthers@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA68CAD920E5CF64004610FF /* fromOthers@2x.png */; };
+		EA68CADE20E5CF64004610FF /* fromMe.png in Resources */ = {isa = PBXBuildFile; fileRef = EA68CADA20E5CF64004610FF /* fromMe.png */; };
+		EA68CADF20E5CF64004610FF /* fromOthers.png in Resources */ = {isa = PBXBuildFile; fileRef = EA68CADB20E5CF64004610FF /* fromOthers.png */; };
+		EA68CAE120E61210004610FF /* UIImage+ Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA68CAE020E61210004610FF /* UIImage+ Resize.swift */; };
+		EA68CAE320E62F9D004610FF /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA68CAE220E62F9D004610FF /* LogManager.swift */; };
 		EADBC2C120E344D20000ABD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADBC2C020E344D20000ABD6 /* AppDelegate.swift */; };
 		EADBC2C320E344D20000ABD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADBC2C220E344D20000ABD6 /* ViewController.swift */; };
 		EADBC2C620E344D20000ABD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EADBC2C420E344D20000ABD6 /* Main.storyboard */; };
 		EADBC2C820E344D40000ABD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EADBC2C720E344D40000ABD6 /* Assets.xcassets */; };
 		EADBC2CB20E344D40000ABD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EADBC2C920E344D40000ABD6 /* LaunchScreen.storyboard */; };
+		EADBC2D420E367B30000ABD6 /* Commnuicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADBC2D320E367B30000ABD6 /* Commnuicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B9B8A0BA5D441DAAFF3D29E /* Pods-HelloMyChartroom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloMyChartroom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloMyChartroom/Pods-HelloMyChartroom.debug.xcconfig"; sourceTree = "<group>"; };
+		7EDE52D8F3BB3D0310F9A0B5 /* Pods-HelloMyChartroom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloMyChartroom.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloMyChartroom/Pods-HelloMyChartroom.release.xcconfig"; sourceTree = "<group>"; };
+		827014B8FD6C641356416F6B /* Pods_HelloMyChartroom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloMyChartroom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0DAD0E21201EC600218A0C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		EA68CAAD20E47D38004610FF /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		EA68CAAF20E494C0004610FF /* ChatItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatItem.swift; sourceTree = "<group>"; };
+		EA68CAB220E4BDCE004610FF /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		EA68CAD820E5CF64004610FF /* fromMe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fromMe@2x.png"; sourceTree = "<group>"; };
+		EA68CAD920E5CF64004610FF /* fromOthers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fromOthers@2x.png"; sourceTree = "<group>"; };
+		EA68CADA20E5CF64004610FF /* fromMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fromMe.png; sourceTree = "<group>"; };
+		EA68CADB20E5CF64004610FF /* fromOthers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fromOthers.png; sourceTree = "<group>"; };
+		EA68CAE020E61210004610FF /* UIImage+ Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+ Resize.swift"; sourceTree = "<group>"; };
+		EA68CAE220E62F9D004610FF /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
 		EADBC2BD20E344D20000ABD6 /* HelloMyChartroom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloMyChartroom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADBC2C020E344D20000ABD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EADBC2C220E344D20000ABD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +47,8 @@
 		EADBC2C720E344D40000ABD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EADBC2CA20E344D40000ABD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EADBC2CC20E344D40000ABD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EADBC2D220E34B2B0000ABD6 /* HelloMyChartroom.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HelloMyChartroom.entitlements; sourceTree = "<group>"; };
+		EADBC2D320E367B30000ABD6 /* Commnuicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commnuicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +56,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B91CD7E46A9153A4AB38677 /* Pods_HelloMyChartroom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4689D7AD54488F3574B81501 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				827014B8FD6C641356416F6B /* Pods_HelloMyChartroom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2CF609E9C3326D8E291291E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B9B8A0BA5D441DAAFF3D29E /* Pods-HelloMyChartroom.debug.xcconfig */,
+				7EDE52D8F3BB3D0310F9A0B5 /* Pods-HelloMyChartroom.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA68CAB120E4BD57004610FF /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				EA68CADA20E5CF64004610FF /* fromMe.png */,
+				EA68CAD820E5CF64004610FF /* fromMe@2x.png */,
+				EA68CADB20E5CF64004610FF /* fromOthers.png */,
+				EA68CAD920E5CF64004610FF /* fromOthers@2x.png */,
+				EA68CAB220E4BDCE004610FF /* ChatView.swift */,
+			);
+			path = ChatView;
+			sourceTree = "<group>";
+		};
 		EADBC2B420E344D20000ABD6 = {
 			isa = PBXGroup;
 			children = (
+				EA0DAD0E21201EC600218A0C /* .gitignore */,
 				EADBC2BF20E344D20000ABD6 /* HelloMyChartroom */,
 				EADBC2BE20E344D20000ABD6 /* Products */,
+				A2CF609E9C3326D8E291291E /* Pods */,
+				4689D7AD54488F3574B81501 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,8 +114,15 @@
 		EADBC2BF20E344D20000ABD6 /* HelloMyChartroom */ = {
 			isa = PBXGroup;
 			children = (
+				EA68CAB120E4BD57004610FF /* ChatView */,
+				EADBC2D220E34B2B0000ABD6 /* HelloMyChartroom.entitlements */,
 				EADBC2C020E344D20000ABD6 /* AppDelegate.swift */,
+				EADBC2D320E367B30000ABD6 /* Commnuicator.swift */,
+				EA68CAAD20E47D38004610FF /* Define.swift */,
+				EA68CAE020E61210004610FF /* UIImage+ Resize.swift */,
+				EA68CAE220E62F9D004610FF /* LogManager.swift */,
 				EADBC2C220E344D20000ABD6 /* ViewController.swift */,
+				EA68CAAF20E494C0004610FF /* ChatItem.swift */,
 				EADBC2C420E344D20000ABD6 /* Main.storyboard */,
 				EADBC2C720E344D40000ABD6 /* Assets.xcassets */,
 				EADBC2C920E344D40000ABD6 /* LaunchScreen.storyboard */,
@@ -71,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EADBC2CF20E344D40000ABD6 /* Build configuration list for PBXNativeTarget "HelloMyChartroom" */;
 			buildPhases = (
+				A8F379B27F3B9AE19AF50B96 /* [CP] Check Pods Manifest.lock */,
 				EADBC2B920E344D20000ABD6 /* Sources */,
 				EADBC2BA20E344D20000ABD6 /* Frameworks */,
 				EADBC2BB20E344D20000ABD6 /* Resources */,
+				CAFB54FF105DDB241FFBF372 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +165,11 @@
 				TargetAttributes = {
 					EADBC2BC20E344D20000ABD6 = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -122,21 +196,73 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0DAD0F21201EC600218A0C /* .gitignore in Resources */,
+				EA68CADC20E5CF64004610FF /* fromMe@2x.png in Resources */,
+				EA68CADE20E5CF64004610FF /* fromMe.png in Resources */,
+				EA68CADD20E5CF64004610FF /* fromOthers@2x.png in Resources */,
 				EADBC2CB20E344D40000ABD6 /* LaunchScreen.storyboard in Resources */,
 				EADBC2C820E344D40000ABD6 /* Assets.xcassets in Resources */,
+				EA68CADF20E5CF64004610FF /* fromOthers.png in Resources */,
 				EADBC2C620E344D20000ABD6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A8F379B27F3B9AE19AF50B96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloMyChartroom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAFB54FF105DDB241FFBF372 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HelloMyChartroom/Pods-HelloMyChartroom-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloMyChartroom/Pods-HelloMyChartroom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EADBC2B920E344D20000ABD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA68CAB020E494C0004610FF /* ChatItem.swift in Sources */,
+				EADBC2D420E367B30000ABD6 /* Commnuicator.swift in Sources */,
 				EADBC2C320E344D20000ABD6 /* ViewController.swift in Sources */,
+				EA68CAAE20E47D38004610FF /* Define.swift in Sources */,
+				EA68CAB320E4BDCE004610FF /* ChatView.swift in Sources */,
 				EADBC2C120E344D20000ABD6 /* AppDelegate.swift in Sources */,
+				EA68CAE120E61210004610FF /* UIImage+ Resize.swift in Sources */,
+				EA68CAE320E62F9D004610FF /* LogManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,17 +404,22 @@
 		};
 		EADBC2D020E344D40000ABD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B9B8A0BA5D441DAAFF3D29E /* Pods-HelloMyChartroom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z599PZ7MZ9;
+				CODE_SIGN_ENTITLEMENTS = HelloMyChartroom/HelloMyChartroom.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = PY8GD98FSY;
 				INFOPLIST_FILE = HelloMyChartroom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.HelloMyChartroom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cp101.apns.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "dfa40cb2-8deb-4e1f-ac15-0a6263a4a8d1";
+				PROVISIONING_PROFILE_SPECIFIER = "CP101 APNS Test Development";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,17 +427,21 @@
 		};
 		EADBC2D120E344D40000ABD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EDE52D8F3BB3D0310F9A0B5 /* Pods-HelloMyChartroom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z599PZ7MZ9;
+				CODE_SIGN_ENTITLEMENTS = HelloMyChartroom/HelloMyChartroom.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HelloMyChartroom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.HelloMyChartroom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cp101.apns.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

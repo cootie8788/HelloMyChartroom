@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,8 +17,51 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //Ask user‘s premission
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .badge, .sound]) { (grant, error) in
+            if let error = error {
+                print("requestAuthorization fail: \(error)")
+            }
+            print("User grant the permission:" + (grant ? "Yes":"NO"))
+        }
+        //要求 device token
+        application.registerForRemoteNotifications()
+        
         return true
     }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        //Convert deviceToken to String
+//        let deviceTokenString = deviceToken.map { (byte) -> String in
+//            return String(format: "%02x", byte)
+//        }.joined()
+//        let deviceTokenString = deviceToken.map { (byte) -> String in
+//             String(format: "%02x", byte)
+//            }.joined()
+        let deviceTokenString = deviceToken.map {String(format: "%02x", $0)
+            }.joined()
+        print("deviceTokenString: \(deviceTokenString)")
+        Commnuicator.shared.updateDeviceToken((deviceTokenString)) { (error, result) in
+            if let error = error  {
+            print("updateDeviceToken fail: \(error)")
+            return
+            }else if let result = result {
+                print("updateDeviceToken Ok: \(result)")
+            }
+        }
+        
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print(" didFailToRegisterForRemoteNotificationsWithError: \(error)")
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        print("didReceiveRemoteNotification: \(userInfo)")
+        NotificationCenter.default.post(name: .didReceiveRemoteMessage, object: nil)
+    }
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -41,6 +85,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+  
 }
 

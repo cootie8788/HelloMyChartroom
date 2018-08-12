@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,71 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloMyChartroom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cOK-pJ-gtU">
+                                <rect key="frame" x="16" y="20" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="send"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="G3d-6D-esQ"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uiT-7c-o44">
+                                <rect key="frame" x="306" y="68" width="53" height="30"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jGa-0h-j3G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcW-O1-XiZ">
+                                <rect key="frame" x="15" y="68" width="68" height="30"/>
+                                <state key="normal" title="Send Text"/>
+                                <connections>
+                                    <action selector="sendTextBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hXh-cs-aj0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cg-uS-xBB">
+                                <rect key="frame" x="113" y="68" width="80" height="30"/>
+                                <state key="normal" title="Send Photo"/>
+                                <connections>
+                                    <action selector="sendPhotoBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ACS-GH-Bmr"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AI4-dM-DVE" customClass="ChatView" customModule="HelloMyChartroom" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="106" width="375" height="561"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cOK-pJ-gtU" secondAttribute="trailing" constant="16" id="6hi-Ab-Cfe"/>
+                            <constraint firstItem="UcW-O1-XiZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="P07-Qo-yeM"/>
+                            <constraint firstItem="uiT-7c-o44" firstAttribute="top" secondItem="cOK-pJ-gtU" secondAttribute="bottom" constant="18" id="PjU-05-CnC"/>
+                            <constraint firstItem="AI4-dM-DVE" firstAttribute="top" secondItem="uiT-7c-o44" secondAttribute="bottom" constant="8" id="bLn-4N-S7O"/>
+                            <constraint firstItem="uiT-7c-o44" firstAttribute="trailing" secondItem="cOK-pJ-gtU" secondAttribute="trailing" id="bgc-9R-WxX"/>
+                            <constraint firstItem="uiT-7c-o44" firstAttribute="baseline" secondItem="5cg-uS-xBB" secondAttribute="baseline" id="cwL-WJ-vBx"/>
+                            <constraint firstItem="AI4-dM-DVE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="eQW-Pv-dyZ"/>
+                            <constraint firstItem="5cg-uS-xBB" firstAttribute="leading" secondItem="UcW-O1-XiZ" secondAttribute="trailing" constant="30" id="moD-gK-SVf"/>
+                            <constraint firstItem="uiT-7c-o44" firstAttribute="baseline" secondItem="UcW-O1-XiZ" secondAttribute="baseline" id="uhQ-x2-hSs"/>
+                            <constraint firstItem="AI4-dM-DVE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="upX-PU-VR8"/>
+                            <constraint firstItem="cOK-pJ-gtU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xGp-uI-En6"/>
+                            <constraint firstItem="cOK-pJ-gtU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yqd-pe-Gbu"/>
+                            <constraint firstItem="AI4-dM-DVE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zGC-g3-JQH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="chatView" destination="AI4-dM-DVE" id="rce-jT-a4m"/>
+                        <outlet property="inputTextField" destination="cOK-pJ-gtU" id="wmy-58-Nec"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="126.38680659670166"/>
         </scene>
     </scenes>
 </document>
